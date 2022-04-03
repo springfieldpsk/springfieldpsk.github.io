@@ -104,5 +104,5 @@ theme: landscape
 deploy:
   type: git
   repo: 
-    github: https://github.com/springfieldpsk/prsk.github.io.git
+    github: https://github.com/springfieldpsk/springfieldpsk.github.io.git
   branch: main
