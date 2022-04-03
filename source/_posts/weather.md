@@ -2,7 +2,7 @@
 title: 天气系统
 date: 2022-04-03 17:58:58
 tags:
-mathjax:true
+mathjax: true
 ---
 
 ## 太阳高度角与太阳方位角
