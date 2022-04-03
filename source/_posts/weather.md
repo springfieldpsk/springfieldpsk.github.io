@@ -8,7 +8,7 @@ mathjax: true
 ## 太阳高度角与太阳方位角
 
 cpp: sunAngle.cpp
-
+<!-- more -->
 ### 太阳高度角与太阳方位角 计算方法
 
 #### 赤道坐标系
