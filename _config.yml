@@ -105,7 +105,6 @@ deploy:
   type: git
   repo: 
     github: https://github.com/springfieldpsk/springfieldpsk.github.io.git
-    gitee: https://gitee.com/wintercove/wintercove.git
   branch: main
 
 math:
