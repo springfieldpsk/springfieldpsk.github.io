@@ -28,6 +28,6 @@ tags:
 
 ![BPuser1](https://raw.githubusercontent.com/springfieldpsk/finalTestStore/master/pic/BPuser1.png)
 
-![BPuser2](pic/BPuser2.png)(https://raw.githubusercontent.com/springfieldpsk/finalTestStore/master/pic/BPuser2.png)
+![BPuser2](https://raw.githubusercontent.com/springfieldpsk/finalTestStore/master/pic/BPuser2.png)
 
 ![BPW1](https://raw.githubusercontent.com/springfieldpsk/finalTestStore/master/pic/BPW1.png)
