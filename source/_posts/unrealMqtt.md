@@ -18,16 +18,16 @@ tags:
 
 ## 蓝图
 
-![BP_ScreenBP1](pic/BP_ScreenBP1.png)
+![BP_ScreenBP1](https://raw.githubusercontent.com/springfieldpsk/finalTestStore/master/pic/BP_ScreenBP1.png)
 
-![BP_ScreenBP2](pic/BP_ScreenBP2.png)
+![BP_ScreenBP2](https://raw.githubusercontent.com/springfieldpsk/finalTestStore/master/pic/BP_ScreenBP2.png)
 
-![BP_ScreenBP3](pic/BP_ScreenBP3.png)
+![BP_ScreenBP3](https://raw.githubusercontent.com/springfieldpsk/finalTestStore/master/pic/BP_ScreenBP3.png)
 
-![BP_ScreenComTree](pic/BP_ScreenComTree.png)
+![BP_ScreenComTree](https://raw.githubusercontent.com/springfieldpsk/finalTestStore/master/pic/BP_ScreenComTree.png)
 
-![BPuser1](pic/BPuser1.png)
+![BPuser1](https://raw.githubusercontent.com/springfieldpsk/finalTestStore/master/pic/BPuser1.png)
 
-![BPuser2](pic/BPuser2.png)
+![BPuser2](pic/BPuser2.png)(https://raw.githubusercontent.com/springfieldpsk/finalTestStore/master/pic/BPuser2.png)
 
-![BPW1](pic/BPW1.png)
+![BPW1](https://raw.githubusercontent.com/springfieldpsk/finalTestStore/master/pic/BPW1.png)
