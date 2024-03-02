@@ -1,6 +1,6 @@
 ---
-title: 雨雪
-date: 2022-04-03 18:00:35
+title: rainAndSnow
+date: 2024-03-03 00:15:17
 tags:
 ---
 
@@ -81,8 +81,8 @@ tags:
 10. 编译C++类并生成蓝图类
 11. 将蓝图类置于场景中，并指定时间轴曲线，材质参数集
 
-    ![Weather选项1](https://github.com/springfieldpsk/finalTestStore/raw/master/pic/Weather%E9%80%89%E9%A1%B91_1.png)
-    ![Weather选项2](https://github.com/springfieldpsk/finalTestStore/raw/master/pic/Weather%E9%80%89%E9%A1%B92_1.png)
+    ![Weather选项1](rainAndSnow/Weather1_1.png)
+    ![Weather选项2](rainAndSnow/Weather2_1.png)
 
 12. 定义蓝图控制用户界面控件，以控制BP_WeatherChangActor
 
@@ -345,12 +345,12 @@ void AWeatherChangeActor::WeatherTimelineFinishedCallBack()
 
 蓝图:
 
-![蓝图实现1](https://github.com/springfieldpsk/finalTestStore/blob/master/pic/%E8%93%9D%E5%9B%BE%E5%AE%9E%E7%8E%B01.png)
+![蓝图实现1](rainAndSnow/BPSW1.png)
 
-![蓝图实现2](https://github.com/springfieldpsk/finalTestStore/raw/master/pic/%E8%93%9D%E5%9B%BE%E5%AE%9E%E7%8E%B02.png)
+![蓝图实现2](rainAndSnow/BPSW2.png)
 
-![蓝图实现3](https://github.com/springfieldpsk/finalTestStore/blob/master/pic/%E8%93%9D%E5%9B%BE%E5%AE%9E%E7%8E%B03.png)
+![蓝图实现3](rainAndSnow/BPSW3.png)
 
-![蓝图实现4](https://github.com/springfieldpsk/finalTestStore/blob/master/pic/%E8%93%9D%E5%9B%BE%E5%AE%9E%E7%8E%B04.png)
+![蓝图实现4](rainAndSnow/BPSW4.png)
 
-![蓝图实现5](https://github.com/springfieldpsk/finalTestStore/blob/master/pic/%E8%93%9D%E5%9B%BE%E5%AE%9E%E7%8E%B05.png)
+![蓝图实现5](rainAndSnow/BPSW5.png)
