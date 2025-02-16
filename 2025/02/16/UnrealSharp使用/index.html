@@ -20,19 +20,19 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="太阳高度角与太阳方位角 cpp: sunAngle.cpp">
+  <meta name="description" content="UnrealSharp使用 UnrealSharp 是一个使用C#作为UE脚本语言的项目 接入 创建一个C++项目，在项目Plugins目录下拉取插件 使用sln编译插件，启动项目，参照网页接入即可">
 <meta property="og:type" content="article">
-<meta property="og:title" content="天气系统">
-<meta property="og:url" content="http://example.com/2022/04/03/weather/index.html">
+<meta property="og:title" content="UnrealSharp使用">
+<meta property="og:url" content="http://example.com/2025/02/16/UnrealSharp%E4%BD%BF%E7%94%A8/index.html">
 <meta property="og:site_name" content="prsk&#39;s blog">
-<meta property="og:description" content="太阳高度角与太阳方位角 cpp: sunAngle.cpp">
+<meta property="og:description" content="UnrealSharp使用 UnrealSharp 是一个使用C#作为UE脚本语言的项目 接入 创建一个C++项目，在项目Plugins目录下拉取插件 使用sln编译插件，启动项目，参照网页接入即可">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-04-03T09:58:58.000Z">
-<meta property="article:modified_time" content="2024-03-02T15:00:07.453Z">
+<meta property="article:published_time" content="2025-02-16T14:36:17.000Z">
+<meta property="article:modified_time" content="2025-02-16T14:41:09.718Z">
 <meta property="article:author" content="prsk">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2022/04/03/weather/">
+<link rel="canonical" href="http://example.com/2025/02/16/UnrealSharp%E4%BD%BF%E7%94%A8/">
 
 
 <script id="page-configurations">
@@ -45,7 +45,7 @@
   };
 </script>
 
-  <title>天气系统 | prsk's blog</title>
+  <title>UnrealSharp使用 | prsk's blog</title>
   
 
 
@@ -150,7 +150,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/03/weather/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/02/16/UnrealSharp%E4%BD%BF%E7%94%A8/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -163,7 +163,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          天气系统
+          UnrealSharp使用
         </h1>
 
         <div class="post-meta">
@@ -172,16 +172,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2022-04-03 17:58:58" itemprop="dateCreated datePublished" datetime="2022-04-03T17:58:58+08:00">2022-04-03</time>
+              <time title="创建时间：2025-02-16 22:36:17 / 修改时间：22:41:09" itemprop="dateCreated datePublished" datetime="2025-02-16T22:36:17+08:00">2025-02-16</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2024-03-02 23:00:07" itemprop="dateModified" datetime="2024-03-02T23:00:07+08:00">2024-03-02</time>
-              </span>
 
           
 
@@ -194,74 +188,13 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="太阳高度角与太阳方位角">太阳高度角与太阳方位角</h2>
-<p>cpp: sunAngle.cpp <span id="more"></span> ### 太阳高度角与太阳方位角
-计算方法</p>
-<h4 id="赤道坐标系">赤道坐标系</h4>
-<p>时角 <span class="math inline">\(\omega\)</span>:</p>
-<p>时角是从观测点天球子午圈沿天赤道量至太阳所在时圈的角距离</p>
-<p><span class="math display">\[\omega = (T - 12) *
-15^{\circ}\]</span></p>
-<p>T 为真太阳时</p>
-<p>赤纬角<span class="math inline">\(\delta\)</span>:</p>
-<p>赤纬角是地球赤道面与太阳和地球中心连接线的夹角</p>
-<p><span class="math display">\[\delta = 23.45 \sin(360 \times
-\frac{284+N}{365})\]</span></p>
-<p>N为积日,即从当年1月1日起开始计算的天数。例如：每年的1月1日为第1日，2月1日为第32日，以此类推。平年的12月31日为第365日，闰年的12月31日为第366日</p>
-<h4 id="地平坐标系">地平坐标系</h4>
-<p>太阳高度角 <span class="math inline">\(\alpha _{s}\)</span>:</p>
-<p>太阳直射光与其观察点所在地平面的夹角</p>
-<p><span class="math display">\[ \sin \alpha _{s} =
-\sin{\varphi}\sin{\delta} + \cos{\varphi}\cos{\delta} \cos \omega
-\]</span></p>
-<p><span class="math inline">\(\varphi\)</span>为观测者所在地纬度</p>
-<p>方位角 <span class="math inline">\(\gamma _{s}\)</span>:</p>
-<p>太阳直射光线在地平面上的投影线与地平面上正南方向线之间的夹角</p>
-<p><span class="math display">\[\sin \gamma _{s} = \frac{\cos \delta
-\sin \omega}{\cos \alpha_{s}}\]</span></p>
-<p><span class="math display">\[ \cos \gamma _{s} = \frac{\sin \alpha
-_{s} \sin \varphi - \sin \delta}{\cos \alpha _{s} \cos
-\varphi}\]</span></p>
-<h4 id="真太阳时">真太阳时</h4>
-<p><span class="math display">\[ 平太阳时 = 北京时间 \pm 4 min * (
-L_{st} - L_{LOC})\]</span></p>
-<p><span class="math inline">\(L_{LOC}\)</span> 为被测地所在经度,
-"+"适用于西半球,"-"适用于东半球。<span
-class="math inline">\(L_{st}\)</span>为标准时区经度,北京时间<span
-class="math inline">\(L_{st}=120\)</span></p>
-<p>真太阳时差<span class="math inline">\(\Delta t^{[2]}\)</span> 1:</p>
-<p><span class="math display">\[ \Delta t = 0.0028 - 1.9857 \sin \theta
-+ 9.9059 \sin 2 \theta - 7.0924 \cos \theta - 0.6882 cos 2 \theta
-\]</span></p>
-<p>日角 <span class="math inline">\(\theta\)</span>:</p>
-<p><span class="math display">\[\theta = 2 \pi t \div
-365.2422\]</span></p>
-<p><span class="math display">\[ t = N - N_{0}\]</span></p>
-<p>N为积日, <span class="math inline">\(N_{0}\)</span>为标准年</p>
-<p><span class="math display">\[N_{0} = K + 0.2422 * (年份 - 标准年) -
-INT(0.25 * (年份 - 标准年))\]</span></p>
-<p>K是标准年的岁首至春分点的时间，设定标准年为1985年,即K = 79.6764</p>
-<p><span class="math display">\[真太阳时 = 北京时间 \pm 4 min * ( L_{st}
-- L_{LOC}) + \Delta t`\]</span></p>
-<p>真太阳时差<span class="math inline">\(\Delta t\)</span> 2:</p>
-<p><span class="math display">\[ \Delta t = 0.0172 + 0.4281 \cos Q -
-7.3515 \sin Q - 3.3495 \cos 2Q - 9.3619 \sin 2Q\]</span></p>
-<p><span class="math display">\[Q = \frac{2 \pi n}{365}\]</span></p>
-<p>[1]王慧,崔连延.太阳高度角和方位角的计算算法[J].电子技术与软件工程,2015(17):167.</p>
-<p>[2]王炳忠,刘庚山.日射观测中常用天文参数的再计算[J].太阳能学报,1991(01):27-32.</p>
-<h2 id="日出与日落">日出与日落</h2>
-<p>原理：</p>
-<p>通过ue实验性功能sunpostion实现，开启插件功能Sun Position
-Calculator</p>
-<p>在 Engine/Plugins/Runtime/SunPosition/Content
-中找到BP_SunPosition,引入场景中BP_SUnPosition自动关联场景中的Sky
-Sphere，通过调整参数来实现对场景光源的控制</p>
-<p>实现：</p>
-<ol type="1">
-<li>开启插件功能Sun Position Calculator</li>
-<li>引入BP_SunPosition进入场景</li>
-<li>通过数字孪生系统，获取指定/当期位置的地理信息，调整BP_SunPosition参数，实现实时天空的控制</li>
-</ol>
+        <h1 id="unrealsharp使用">UnrealSharp使用</h1>
+<p><a target="_blank" rel="noopener" href="https://www.unrealsharp.com/">UnrealSharp</a>
+是一个使用C#作为UE脚本语言的项目</p>
+<h2 id="接入">接入</h2>
+<p>创建一个C++项目，在项目Plugins目录下拉取<a
+target="_blank" rel="noopener" href="https://github.com/UnrealSharp/UnrealSharp">插件</a></p>
+<p>使用sln编译插件，启动项目，参照网页接入即可</p>
 
     </div>
 
@@ -277,13 +210,10 @@ Sphere，通过调整参数来实现对场景光源的控制</p>
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2022/04/03/model/" rel="prev" title="倾斜摄影三维重建总结">
-      <i class="fa fa-chevron-left"></i> 倾斜摄影三维重建总结
+    <a href="/2024/05/10/%E4%BB%A3%E7%A0%81%E7%BC%96%E8%BE%91%E5%99%A8%E5%BC%80%E5%8F%91/" rel="prev" title="代码编辑器开发">
+      <i class="fa fa-chevron-left"></i> 代码编辑器开发
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2022/04/03/%E6%95%B0%E5%AD%97%E5%AD%AA%E7%94%9F/" rel="next" title="数字孪生">
-      数字孪生 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -342,7 +272,7 @@ Sphere，通过调整参数来实现对场景光源的控制</p>
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%AA%E9%98%B3%E9%AB%98%E5%BA%A6%E8%A7%92%E4%B8%8E%E5%A4%AA%E9%98%B3%E6%96%B9%E4%BD%8D%E8%A7%92"><span class="nav-number">1.</span> <span class="nav-text">太阳高度角与太阳方位角</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%B5%A4%E9%81%93%E5%9D%90%E6%A0%87%E7%B3%BB"><span class="nav-number">1.0.1.</span> <span class="nav-text">赤道坐标系</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9C%B0%E5%B9%B3%E5%9D%90%E6%A0%87%E7%B3%BB"><span class="nav-number">1.0.2.</span> <span class="nav-text">地平坐标系</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%9C%9F%E5%A4%AA%E9%98%B3%E6%97%B6"><span class="nav-number">1.0.3.</span> <span class="nav-text">真太阳时</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%97%A5%E5%87%BA%E4%B8%8E%E6%97%A5%E8%90%BD"><span class="nav-number">2.</span> <span class="nav-text">日出与日落</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#unrealsharp%E4%BD%BF%E7%94%A8"><span class="nav-number">1.</span> <span class="nav-text">UnrealSharp使用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8E%A5%E5%85%A5"><span class="nav-number">1.1.</span> <span class="nav-text">接入</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -447,59 +377,6 @@ Sphere，通过调整参数来实现对场景光源的控制</p>
   
 
   
-      
-
-<script>
-  if (typeof MathJax === 'undefined') {
-    window.MathJax = {
-      loader: {
-        source: {
-          '[tex]/amsCd': '[tex]/amscd',
-          '[tex]/AMScd': '[tex]/amscd'
-        }
-      },
-      tex: {
-        inlineMath: {'[+]': [['$', '$']]},
-        tags: 'ams'
-      },
-      options: {
-        renderActions: {
-          findScript: [10, doc => {
-            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
-              const display = !!node.type.match(/; *mode=display/);
-              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
-              const text = document.createTextNode('');
-              node.parentNode.replaceChild(text, node);
-              math.start = {node: text, delim: '', n: 0};
-              math.end = {node: text, delim: '', n: 0};
-              doc.math.push(math);
-            });
-          }, '', false],
-          insertedScript: [200, () => {
-            document.querySelectorAll('mjx-container').forEach(node => {
-              let target = node.parentNode;
-              if (target.nodeName.toLowerCase() === 'li') {
-                target.parentNode.classList.add('has-jax');
-              }
-            });
-          }, '', false]
-        }
-      }
-    };
-    (function () {
-      var script = document.createElement('script');
-      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
-      script.defer = true;
-      document.head.appendChild(script);
-    })();
-  } else {
-    MathJax.startup.document.state(0);
-    MathJax.texReset();
-    MathJax.typeset();
-  }
-</script>
-
-    
 
   
 
